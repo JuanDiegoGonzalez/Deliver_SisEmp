@@ -1,0 +1,36 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="f0514cb93066eb891745c52b" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="f0514cb93066eb891745c52b_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="Sheet1Set" EntityType="f0514cb93066eb891745c52b.Sheet1" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="HistorialSet" EntityType="f0514cb93066eb891745c52b.Historial" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+            </EntityContainer>
+            <EntityType Name="Sheet1">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="ORIGEN" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ORIGEN"/>
+                <Property Name="REMITENTE" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="REMITENTE"/>
+                <Property Name="WORKFLOW" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="WORKFLOW"/>
+                <Property Name="PASO" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PASO"/>
+                <Property Name="REFERENCIA" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="REFERENCIA"/>
+                <Property Name="FECHA_RADICACION" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="FECHA_RADICACION"/>
+                <Property Name="FECHA_ENTRADA" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="FECHA_ENTRADA"/>
+                <Property Name="TIEMPO" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TIEMPO"/>
+            </EntityType>
+            <EntityType Name="Historial">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="ORIGEN" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ORIGEN"/>
+                <Property Name="REMITENTE" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="REMITENTE"/>
+                <Property Name="WORKFLOW" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="WORKFLOW"/>
+                <Property Name="REFERENCIA" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="REFERENCIA"/>
+                <Property Name="FECHA_RADICACION" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="FECHA_RADICACION"/>
+                <Property Name="FECHA_ENTRADA" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="FECHA_ENTRADA"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
